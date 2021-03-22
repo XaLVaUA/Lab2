@@ -200,7 +200,7 @@ namespace Lab2
                     classWordsCount
                         .OrderByDescending(x => x.Value)
                         .Take(10)
-                        .Select(x => x.Key)
+                        .Select(x => ((string Word, int Count))(x.Key, x.Value))
                         .ToList();
 
                 var top10WithoutStopWords =
@@ -208,7 +208,7 @@ namespace Lab2
                         .Where(x => x.Key.Length > 3)
                         .OrderByDescending(x => x.Value)
                         .Take(10)
-                        .Select(x => x.Key)
+                        .Select(x => ((string Word, int Count))(x.Key, x.Value))
                         .ToList();
 
                 LogLine();
@@ -217,9 +217,9 @@ namespace Lab2
 
                 LogLine("Top 10");
 
-                foreach (var word in top10)
+                foreach (var (word, count) in top10)
                 {
-                    Log($"{word} ");
+                    LogLine($"'{word}' : '{count}'");
                 }
 
                 LogLine();
@@ -227,9 +227,9 @@ namespace Lab2
 
                 LogLine("Top 10 without stop words (length <= 3)");
 
-                foreach (var word in top10WithoutStopWords)
+                foreach (var (word, count) in top10WithoutStopWords)
                 {
-                    Log($"{word} ");
+                    LogLine($"'{word}' : '{count}'");
                 }
 
                 LogLine();
