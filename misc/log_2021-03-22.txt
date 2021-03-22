@@ -1,0 +1,853 @@
+
+-----
+2021-03-22-19:17
+
+Learn data 'test_10.csv'
+Test data 'test.csv'
+
+Read Jokes to learn
+Total jokes count '20'
+Total words count '909'
+
+Class '0'
+Jokes count '10'
+Words count '446'
+
+Class '1'
+Jokes count '10'
+Words count '463'
+
+Loaded test jokes (count '40')
+
+Joke number '61' (actual class '0')
+Classified to class '0' with classify result '-229.3735198504008'
+Classified to class '1' with classify result '-234.57530024646053'
+Joke is probably belongs to '0' class
+True
+
+Joke number '62' (actual class '1')
+Classified to class '0' with classify result '-180.45671187388237'
+Classified to class '1' with classify result '-171.11921855755062'
+Joke is probably belongs to '1' class
+True
+
+Joke number '63' (actual class '0')
+Classified to class '0' with classify result '-458.41561592372614'
+Classified to class '1' with classify result '-462.9276467526246'
+Joke is probably belongs to '0' class
+True
+
+Joke number '64' (actual class '1')
+Classified to class '0' with classify result '-172.77088020355498'
+Classified to class '1' with classify result '-166.104067336312'
+Joke is probably belongs to '1' class
+True
+
+Joke number '65' (actual class '0')
+Classified to class '0' with classify result '-214.55929247999524'
+Classified to class '1' with classify result '-233.56142918624752'
+Joke is probably belongs to '0' class
+True
+
+Joke number '66' (actual class '1')
+Classified to class '0' with classify result '-156.4740174303273'
+Classified to class '1' with classify result '-154.98059957733744'
+Joke is probably belongs to '1' class
+True
+
+Joke number '67' (actual class '0')
+Classified to class '0' with classify result '-410.39025363908473'
+Classified to class '1' with classify result '-416.77316310646637'
+Joke is probably belongs to '0' class
+True
+
+Joke number '68' (actual class '1')
+Classified to class '0' with classify result '-267.09203208301085'
+Classified to class '1' with classify result '-258.6936940493919'
+Joke is probably belongs to '1' class
+True
+
+Joke number '69' (actual class '0')
+Classified to class '0' with classify result '-354.3346136725845'
+Classified to class '1' with classify result '-389.44571152752457'
+Joke is probably belongs to '0' class
+True
+
+Joke number '70' (actual class '1')
+Classified to class '0' with classify result '-95.07064081394937'
+Classified to class '1' with classify result '-92.02490096638142'
+Joke is probably belongs to '1' class
+True
+
+Joke number '71' (actual class '0')
+Classified to class '0' with classify result '-223.66599495888985'
+Classified to class '1' with classify result '-243.71472855954846'
+Joke is probably belongs to '0' class
+True
+
+Joke number '72' (actual class '1')
+Classified to class '0' with classify result '-700.1605177759027'
+Classified to class '1' with classify result '-694.7796186014924'
+Joke is probably belongs to '1' class
+True
+
+Joke number '73' (actual class '0')
+Classified to class '0' with classify result '-138.0739965888025'
+Classified to class '1' with classify result '-143.19027947698726'
+Joke is probably belongs to '0' class
+True
+
+Joke number '74' (actual class '1')
+Classified to class '0' with classify result '-170.96224386397898'
+Classified to class '1' with classify result '-162.63656978085177'
+Joke is probably belongs to '1' class
+True
+
+Joke number '75' (actual class '0')
+Classified to class '0' with classify result '-198.13417537124386'
+Classified to class '1' with classify result '-208.90874889998835'
+Joke is probably belongs to '0' class
+True
+
+Joke number '76' (actual class '1')
+Classified to class '0' with classify result '-170.32234119793787'
+Classified to class '1' with classify result '-166.7356017526826'
+Joke is probably belongs to '1' class
+True
+
+Joke number '77' (actual class '0')
+Classified to class '0' with classify result '-486.0156516205804'
+Classified to class '1' with classify result '-501.88545840545396'
+Joke is probably belongs to '0' class
+True
+
+Joke number '78' (actual class '1')
+Classified to class '0' with classify result '-309.7009881588196'
+Classified to class '1' with classify result '-300.6900402092829'
+Joke is probably belongs to '1' class
+True
+
+Joke number '79' (actual class '0')
+Classified to class '0' with classify result '-141.97774001269204'
+Classified to class '1' with classify result '-159.66823487397693'
+Joke is probably belongs to '0' class
+True
+
+Joke number '80' (actual class '1')
+Classified to class '0' with classify result '-160.84029570803304'
+Classified to class '1' with classify result '-161.61859937338158'
+Joke is probably belongs to '0' class
+False
+
+Joke number '81' (actual class '0')
+Classified to class '0' with classify result '-110.56622196407655'
+Classified to class '1' with classify result '-125.872406326908'
+Joke is probably belongs to '0' class
+True
+
+Joke number '82' (actual class '1')
+Classified to class '0' with classify result '-261.5738970021182'
+Classified to class '1' with classify result '-264.71192282389836'
+Joke is probably belongs to '0' class
+False
+
+Joke number '83' (actual class '0')
+Classified to class '0' with classify result '-68.06404321987357'
+Classified to class '1' with classify result '-74.61087467935447'
+Joke is probably belongs to '0' class
+True
+
+Joke number '84' (actual class '1')
+Classified to class '0' with classify result '-167.95521758380625'
+Classified to class '1' with classify result '-162.53059873370935'
+Joke is probably belongs to '1' class
+True
+
+Joke number '85' (actual class '0')
+Classified to class '0' with classify result '-152.33005999718432'
+Classified to class '1' with classify result '-161.07878621274233'
+Joke is probably belongs to '0' class
+True
+
+Joke number '86' (actual class '1')
+Classified to class '0' with classify result '-366.3497268572865'
+Classified to class '1' with classify result '-361.6001965158362'
+Joke is probably belongs to '1' class
+True
+
+Joke number '87' (actual class '0')
+Classified to class '0' with classify result '-356.0830480170741'
+Classified to class '1' with classify result '-375.431714475913'
+Joke is probably belongs to '0' class
+True
+
+Joke number '88' (actual class '1')
+Classified to class '0' with classify result '-172.57281028979293'
+Classified to class '1' with classify result '-174.1184030736114'
+Joke is probably belongs to '0' class
+False
+
+Joke number '89' (actual class '0')
+Classified to class '0' with classify result '-79.16599792207981'
+Classified to class '1' with classify result '-84.3099187803778'
+Joke is probably belongs to '0' class
+True
+
+Joke number '90' (actual class '1')
+Classified to class '0' with classify result '-135.24816335204392'
+Classified to class '1' with classify result '-136.90977128478838'
+Joke is probably belongs to '0' class
+False
+
+Joke number '91' (actual class '0')
+Classified to class '0' with classify result '-131.10420591890087'
+Classified to class '1' with classify result '-141.28437466254564'
+Joke is probably belongs to '0' class
+True
+
+Joke number '92' (actual class '1')
+Classified to class '0' with classify result '-370.66388913385316'
+Classified to class '1' with classify result '-368.45839994466564'
+Joke is probably belongs to '1' class
+True
+
+Joke number '93' (actual class '0')
+Classified to class '0' with classify result '-78.09555651037839'
+Classified to class '1' with classify result '-87.71111616203996'
+Joke is probably belongs to '0' class
+True
+
+Joke number '94' (actual class '1')
+Classified to class '0' with classify result '-289.75742503693294'
+Classified to class '1' with classify result '-288.11286739169503'
+Joke is probably belongs to '1' class
+True
+
+Joke number '95' (actual class '0')
+Classified to class '0' with classify result '-131.5096710270091'
+Classified to class '1' with classify result '-141.98571861030976'
+Joke is probably belongs to '0' class
+True
+
+Joke number '96' (actual class '1')
+Classified to class '0' with classify result '-222.41469987458612'
+Classified to class '1' with classify result '-225.25418351585938'
+Joke is probably belongs to '0' class
+False
+
+Joke number '97' (actual class '0')
+Classified to class '0' with classify result '-168.26537689623865'
+Classified to class '1' with classify result '-183.17536627604787'
+Joke is probably belongs to '0' class
+True
+
+Joke number '98' (actual class '1')
+Classified to class '0' with classify result '-293.13354878104303'
+Classified to class '1' with classify result '-287.1602229811197'
+Joke is probably belongs to '1' class
+True
+
+Joke number '99' (actual class '0')
+Classified to class '0' with classify result '-674.0475415337522'
+Classified to class '1' with classify result '-720.3521028053251'
+Joke is probably belongs to '0' class
+True
+
+Joke number '100' (actual class '1')
+Classified to class '0' with classify result '-123.68667632045924'
+Classified to class '1' with classify result '-116.97076739460769'
+Joke is probably belongs to '1' class
+True
+
+Hits count '35' of '40'
+
+-----
+
+
+-----
+2021-03-22-19:17
+
+Learn data 'test_20.csv'
+Test data 'test.csv'
+
+Read Jokes to learn
+Total jokes count '40'
+Total words count '1753'
+
+Class '0'
+Jokes count '20'
+Words count '982'
+
+Class '1'
+Jokes count '20'
+Words count '771'
+
+Loaded test jokes (count '40')
+
+Joke number '61' (actual class '0')
+Classified to class '0' with classify result '-239.69913504712346'
+Classified to class '1' with classify result '-251.1051554020783'
+Joke is probably belongs to '0' class
+True
+
+Joke number '62' (actual class '1')
+Classified to class '0' with classify result '-189.31297604768255'
+Classified to class '1' with classify result '-178.02446048251994'
+Joke is probably belongs to '1' class
+True
+
+Joke number '63' (actual class '0')
+Classified to class '0' with classify result '-485.0540087508412'
+Classified to class '1' with classify result '-494.95396872094335'
+Joke is probably belongs to '0' class
+True
+
+Joke number '64' (actual class '1')
+Classified to class '0' with classify result '-183.12117113310222'
+Classified to class '1' with classify result '-174.3651999491929'
+Joke is probably belongs to '1' class
+True
+
+Joke number '65' (actual class '0')
+Classified to class '0' with classify result '-226.70238274020406'
+Classified to class '1' with classify result '-249.3694853995013'
+Joke is probably belongs to '0' class
+True
+
+Joke number '66' (actual class '1')
+Classified to class '0' with classify result '-167.51996541624445'
+Classified to class '1' with classify result '-165.3956274320212'
+Joke is probably belongs to '1' class
+True
+
+Joke number '67' (actual class '0')
+Classified to class '0' with classify result '-439.830627847866'
+Classified to class '1' with classify result '-439.76140717985464'
+Joke is probably belongs to '1' class
+False
+
+Joke number '68' (actual class '1')
+Classified to class '0' with classify result '-282.92818565195023'
+Classified to class '1' with classify result '-267.2161921027152'
+Joke is probably belongs to '1' class
+True
+
+Joke number '69' (actual class '0')
+Classified to class '0' with classify result '-374.51695443659463'
+Classified to class '1' with classify result '-416.273020336929'
+Joke is probably belongs to '0' class
+True
+
+Joke number '70' (actual class '1')
+Classified to class '0' with classify result '-101.5844710028857'
+Classified to class '1' with classify result '-97.75075175127252'
+Joke is probably belongs to '1' class
+True
+
+Joke number '71' (actual class '0')
+Classified to class '0' with classify result '-234.74019320785482'
+Classified to class '1' with classify result '-258.87926817145876'
+Joke is probably belongs to '0' class
+True
+
+Joke number '72' (actual class '1')
+Classified to class '0' with classify result '-748.488242583252'
+Classified to class '1' with classify result '-733.210396556018'
+Joke is probably belongs to '1' class
+True
+
+Joke number '73' (actual class '0')
+Classified to class '0' with classify result '-148.22294913449605'
+Classified to class '1' with classify result '-153.02639481250617'
+Joke is probably belongs to '0' class
+True
+
+Joke number '74' (actual class '1')
+Classified to class '0' with classify result '-179.66494304613724'
+Classified to class '1' with classify result '-174.16237071856764'
+Joke is probably belongs to '1' class
+True
+
+Joke number '75' (actual class '0')
+Classified to class '0' with classify result '-204.9033501813931'
+Classified to class '1' with classify result '-222.88161996508234'
+Joke is probably belongs to '0' class
+True
+
+Joke number '76' (actual class '1')
+Classified to class '0' with classify result '-181.42579079086738'
+Classified to class '1' with classify result '-173.50369544701368'
+Joke is probably belongs to '1' class
+True
+
+Joke number '77' (actual class '0')
+Classified to class '0' with classify result '-524.965607371104'
+Classified to class '1' with classify result '-537.8159873808315'
+Joke is probably belongs to '0' class
+True
+
+Joke number '78' (actual class '1')
+Classified to class '0' with classify result '-331.09488700552146'
+Classified to class '1' with classify result '-320.98773087063006'
+Joke is probably belongs to '1' class
+True
+
+Joke number '79' (actual class '0')
+Classified to class '0' with classify result '-148.563170682231'
+Classified to class '1' with classify result '-170.21842331659292'
+Joke is probably belongs to '0' class
+True
+
+Joke number '80' (actual class '1')
+Classified to class '0' with classify result '-172.9539442581204'
+Classified to class '1' with classify result '-171.94564426468344'
+Joke is probably belongs to '1' class
+True
+
+Joke number '81' (actual class '0')
+Classified to class '0' with classify result '-116.87911772073164'
+Classified to class '1' with classify result '-134.62906337059485'
+Joke is probably belongs to '0' class
+True
+
+Joke number '82' (actual class '1')
+Classified to class '0' with classify result '-276.52010499188077'
+Classified to class '1' with classify result '-280.89756527125536'
+Joke is probably belongs to '0' class
+False
+
+Joke number '83' (actual class '0')
+Classified to class '0' with classify result '-71.40155933669877'
+Classified to class '1' with classify result '-78.58699194462353'
+Joke is probably belongs to '0' class
+True
+
+Joke number '84' (actual class '1')
+Classified to class '0' with classify result '-180.37983495436652'
+Classified to class '1' with classify result '-171.98257214852535'
+Joke is probably belongs to '1' class
+True
+
+Joke number '85' (actual class '0')
+Classified to class '0' with classify result '-162.5589538242776'
+Classified to class '1' with classify result '-172.558985451975'
+Joke is probably belongs to '0' class
+True
+
+Joke number '86' (actual class '1')
+Classified to class '0' with classify result '-392.39171545824695'
+Classified to class '1' with classify result '-387.95265990149505'
+Joke is probably belongs to '1' class
+True
+
+Joke number '87' (actual class '0')
+Classified to class '0' with classify result '-373.90830431405755'
+Classified to class '1' with classify result '-399.1563055250113'
+Joke is probably belongs to '0' class
+True
+
+Joke number '88' (actual class '1')
+Classified to class '0' with classify result '-184.64736377512884'
+Classified to class '1' with classify result '-184.52812035133098'
+Joke is probably belongs to '1' class
+True
+
+Joke number '89' (actual class '0')
+Classified to class '0' with classify result '-83.92022179884921'
+Classified to class '1' with classify result '-90.2098328690598'
+Joke is probably belongs to '0' class
+True
+
+Joke number '90' (actual class '1')
+Classified to class '0' with classify result '-146.01017145412433'
+Classified to class '1' with classify result '-143.30221115227465'
+Joke is probably belongs to '1' class
+True
+
+Joke number '91' (actual class '0')
+Classified to class '0' with classify result '-137.8223158676401'
+Classified to class '1' with classify result '-150.29462808478664'
+Joke is probably belongs to '0' class
+True
+
+Joke number '92' (actual class '1')
+Classified to class '0' with classify result '-397.03272363356973'
+Classified to class '1' with classify result '-391.050302440254'
+Joke is probably belongs to '1' class
+True
+
+Joke number '93' (actual class '0')
+Classified to class '0' with classify result '-82.96019567346724'
+Classified to class '1' with classify result '-94.48649898807585'
+Joke is probably belongs to '0' class
+True
+
+Joke number '94' (actual class '1')
+Classified to class '0' with classify result '-308.83188831771463'
+Classified to class '1' with classify result '-305.1044195616581'
+Joke is probably belongs to '1' class
+True
+
+Joke number '95' (actual class '0')
+Classified to class '0' with classify result '-138.54791679304978'
+Classified to class '1' with classify result '-150.51468996956345'
+Joke is probably belongs to '0' class
+True
+
+Joke number '96' (actual class '1')
+Classified to class '0' with classify result '-235.07343984834037'
+Classified to class '1' with classify result '-238.77828205640245'
+Joke is probably belongs to '0' class
+False
+
+Joke number '97' (actual class '0')
+Classified to class '0' with classify result '-177.74221158302348'
+Classified to class '1' with classify result '-195.573909599873'
+Joke is probably belongs to '0' class
+True
+
+Joke number '98' (actual class '1')
+Classified to class '0' with classify result '-312.9421832430932'
+Classified to class '1' with classify result '-304.322864409629'
+Joke is probably belongs to '1' class
+True
+
+Joke number '99' (actual class '0')
+Classified to class '0' with classify result '-701.7769946883722'
+Classified to class '1' with classify result '-767.8929001942361'
+Joke is probably belongs to '0' class
+True
+
+Joke number '100' (actual class '1')
+Classified to class '0' with classify result '-132.74037140476028'
+Classified to class '1' with classify result '-124.64953347243967'
+Joke is probably belongs to '1' class
+True
+
+Hits count '37' of '40'
+
+-----
+
+
+-----
+2021-03-22-19:22
+
+Learn data 'test_30.csv'
+Test data 'test.csv'
+
+Read Jokes to learn
+Total jokes count '60'
+Total words count '2426'
+
+Class '0'
+Jokes count '30'
+Words count '1351'
+
+Class '1'
+Jokes count '30'
+Words count '1075'
+
+Loaded test jokes (count '40')
+
+Joke number '61' (actual class '0')
+Classified to class '0' with classify result '-245.4039937405739'
+Classified to class '1' with classify result '-259.8321675386606'
+Joke is probably belongs to '0' class
+True
+
+Joke number '62' (actual class '1')
+Classified to class '0' with classify result '-192.794023862446'
+Classified to class '1' with classify result '-180.34424458127071'
+Joke is probably belongs to '1' class
+True
+
+Joke number '63' (actual class '0')
+Classified to class '0' with classify result '-493.45136177342084'
+Classified to class '1' with classify result '-504.5909964410655'
+Joke is probably belongs to '0' class
+True
+
+Joke number '64' (actual class '1')
+Classified to class '0' with classify result '-187.14703056219236'
+Classified to class '1' with classify result '-177.17539783630394'
+Joke is probably belongs to '1' class
+True
+
+Joke number '65' (actual class '0')
+Classified to class '0' with classify result '-230.45705795966256'
+Classified to class '1' with classify result '-256.411859810796'
+Joke is probably belongs to '0' class
+True
+
+Joke number '66' (actual class '1')
+Classified to class '0' with classify result '-172.01363253443026'
+Classified to class '1' with classify result '-170.18292566457555'
+Joke is probably belongs to '1' class
+True
+
+Joke number '67' (actual class '0')
+Classified to class '0' with classify result '-450.30976500757356'
+Classified to class '1' with classify result '-451.80213576452945'
+Joke is probably belongs to '0' class
+True
+
+Joke number '68' (actual class '1')
+Classified to class '0' with classify result '-291.01260717226296'
+Classified to class '1' with classify result '-271.2207647183465'
+Joke is probably belongs to '1' class
+True
+
+Joke number '69' (actual class '0')
+Classified to class '0' with classify result '-382.89634505576095'
+Classified to class '1' with classify result '-429.4556838064185'
+Joke is probably belongs to '0' class
+True
+
+Joke number '70' (actual class '1')
+Classified to class '0' with classify result '-103.84025068523607'
+Classified to class '1' with classify result '-101.28119154530059'
+Joke is probably belongs to '1' class
+True
+
+Joke number '71' (actual class '0')
+Classified to class '0' with classify result '-240.03443511374192'
+Classified to class '1' with classify result '-266.2829512057879'
+Joke is probably belongs to '0' class
+True
+
+Joke number '72' (actual class '1')
+Classified to class '0' with classify result '-768.6067412497877'
+Classified to class '1' with classify result '-748.4078670509015'
+Joke is probably belongs to '1' class
+True
+
+Joke number '73' (actual class '0')
+Classified to class '0' with classify result '-152.90098832965018'
+Classified to class '1' with classify result '-157.86907957860288'
+Joke is probably belongs to '0' class
+True
+
+Joke number '74' (actual class '1')
+Classified to class '0' with classify result '-184.1823527998041'
+Classified to class '1' with classify result '-177.05736766889012'
+Joke is probably belongs to '1' class
+True
+
+Joke number '75' (actual class '0')
+Classified to class '0' with classify result '-208.13850963072517'
+Classified to class '1' with classify result '-229.7590617653157'
+Joke is probably belongs to '0' class
+True
+
+Joke number '76' (actual class '1')
+Classified to class '0' with classify result '-184.87347825596413'
+Classified to class '1' with classify result '-177.68388369546798'
+Joke is probably belongs to '1' class
+True
+
+Joke number '77' (actual class '0')
+Classified to class '0' with classify result '-537.08229752457'
+Classified to class '1' with classify result '-555.927748730627'
+Joke is probably belongs to '0' class
+True
+
+Joke number '78' (actual class '1')
+Classified to class '0' with classify result '-340.3151834373349'
+Classified to class '1' with classify result '-328.4851575931342'
+Joke is probably belongs to '1' class
+True
+
+Joke number '79' (actual class '0')
+Classified to class '0' with classify result '-152.69259075357274'
+Classified to class '1' with classify result '-175.2067357979581'
+Joke is probably belongs to '0' class
+True
+
+Joke number '80' (actual class '1')
+Classified to class '0' with classify result '-177.79131227517613'
+Classified to class '1' with classify result '-175.01014626936643'
+Joke is probably belongs to '1' class
+True
+
+Joke number '81' (actual class '0')
+Classified to class '0' with classify result '-119.87448975902547'
+Classified to class '1' with classify result '-138.4055905648743'
+Joke is probably belongs to '0' class
+True
+
+Joke number '82' (actual class '1')
+Classified to class '0' with classify result '-284.75165034109995'
+Classified to class '1' with classify result '-288.1875690480829'
+Joke is probably belongs to '0' class
+False
+
+Joke number '83' (actual class '0')
+Classified to class '0' with classify result '-72.84941323966615'
+Classified to class '1' with classify result '-81.55586422125684'
+Joke is probably belongs to '0' class
+True
+
+Joke number '84' (actual class '1')
+Classified to class '0' with classify result '-184.6371367375856'
+Classified to class '1' with classify result '-176.1804639771107'
+Joke is probably belongs to '1' class
+True
+
+Joke number '85' (actual class '0')
+Classified to class '0' with classify result '-165.8472295891743'
+Classified to class '1' with classify result '-176.71815869935722'
+Joke is probably belongs to '0' class
+True
+
+Joke number '86' (actual class '1')
+Classified to class '0' with classify result '-406.3302171462934'
+Classified to class '1' with classify result '-398.49247865231035'
+Joke is probably belongs to '1' class
+True
+
+Joke number '87' (actual class '0')
+Classified to class '0' with classify result '-380.0802757094777'
+Classified to class '1' with classify result '-408.1401232960524'
+Joke is probably belongs to '0' class
+True
+
+Joke number '88' (actual class '1')
+Classified to class '0' with classify result '-190.34891751627356'
+Classified to class '1' with classify result '-189.85874833691892'
+Joke is probably belongs to '1' class
+True
+
+Joke number '89' (actual class '0')
+Classified to class '0' with classify result '-85.25833379218219'
+Classified to class '1' with classify result '-91.93621456132259'
+Joke is probably belongs to '0' class
+True
+
+Joke number '90' (actual class '1')
+Classified to class '0' with classify result '-150.54993365564405'
+Classified to class '1' with classify result '-146.08963282111822'
+Joke is probably belongs to '1' class
+True
+
+Joke number '91' (actual class '0')
+Classified to class '0' with classify result '-139.2061057594745'
+Classified to class '1' with classify result '-155.21232267188824'
+Joke is probably belongs to '0' class
+True
+
+Joke number '92' (actual class '1')
+Classified to class '0' with classify result '-407.59817926142216'
+Classified to class '1' with classify result '-402.1794838622729'
+Joke is probably belongs to '1' class
+True
+
+Joke number '93' (actual class '0')
+Classified to class '0' with classify result '-85.46085805629367'
+Classified to class '1' with classify result '-98.05651198027353'
+Joke is probably belongs to '0' class
+True
+
+Joke number '94' (actual class '1')
+Classified to class '0' with classify result '-317.6480329808482'
+Classified to class '1' with classify result '-313.91031559813894'
+Joke is probably belongs to '1' class
+True
+
+Joke number '95' (actual class '0')
+Classified to class '0' with classify result '-140.989416174216'
+Classified to class '1' with classify result '-154.84315856683'
+Joke is probably belongs to '0' class
+True
+
+Joke number '96' (actual class '1')
+Classified to class '0' with classify result '-242.23989707033894'
+Classified to class '1' with classify result '-245.97015537384902'
+Joke is probably belongs to '0' class
+False
+
+Joke number '97' (actual class '0')
+Classified to class '0' with classify result '-182.64366839049546'
+Classified to class '1' with classify result '-201.7778742815207'
+Joke is probably belongs to '0' class
+True
+
+Joke number '98' (actual class '1')
+Classified to class '0' with classify result '-321.0798895329541'
+Classified to class '1' with classify result '-313.7644495049889'
+Joke is probably belongs to '1' class
+True
+
+Joke number '99' (actual class '0')
+Classified to class '0' with classify result '-719.1456144242982'
+Classified to class '1' with classify result '-792.0230701728769'
+Joke is probably belongs to '0' class
+True
+
+Joke number '100' (actual class '1')
+Classified to class '0' with classify result '-135.01686453761624'
+Classified to class '1' with classify result '-127.38128918489798'
+Joke is probably belongs to '1' class
+True
+
+Hits count '38' of '40'
+
+
+Class '0'
+
+Top 10
+'петька' : '83'
+'василий' : '74'
+'иванович' : '69'
+'и' : '64'
+'а' : '43'
+'на' : '41'
+'в' : '34'
+'ты' : '31'
+'с' : '29'
+'что' : '25'
+
+
+Top 10 without stop words (length <= 3)
+'петька' : '83'
+'василий' : '74'
+'иванович' : '69'
+'муха' : '14'
+'спрашивает' : '9'
+'говорит' : '8'
+'чапаев' : '8'
+'анка' : '7'
+'чапай' : '7'
+'приходит' : '6'
+
+
+
+Class '1'
+
+Top 10
+'в' : '56'
+'я' : '38'
+'на' : '37'
+'и' : '36'
+'что' : '35'
+'не' : '26'
+'вы' : '25'
+'это' : '23'
+'у' : '23'
+'с' : '19'
+
+
+Top 10 without stop words (length <= 3)
+'говорит' : '15'
+'директор' : '14'
+'начальник' : '12'
+'меня' : '11'
+'работу' : '7'
+'работы' : '6'
+'один' : '6'
+'почему' : '6'
+'тебя' : '6'
+'сказал' : '6'
+
+
+-----
+
