@@ -9,7 +9,7 @@ namespace Lab2
 
         public Logger(string logFilePath)
         {
-            _writer = File.CreateText(logFilePath);
+            _writer = File.AppendText(logFilePath);
             _writer.AutoFlush = true;
         }
 

@@ -95,8 +95,12 @@ namespace Lab2
                 return;
             }
 
+            LogLine($"Loaded test jokes (count '{testJokes.Count}')");
+            LogLine();
+
             var uniqueWordsCount = wordsCount.Sum(x => x.Value.Count);
             var classifyResults = new List<(int JokeClass, double ClassifyResult)>();
+            var hits = new List<bool>();
 
             foreach (var testJoke in testJokes)
             {
@@ -137,8 +141,19 @@ namespace Lab2
 
                 LogLine($"Joke is probably belongs to '{classifyJokeClass}' class");
 
+                var hit = classifyJokeClass == testJoke.Class;
+
+                hits.Add(hit);
+
+                LogLine(hit.ToString());
+
                 LogLine();
             }
+
+            var hitsCount = hits.Count(x => x is true);
+
+            LogLine($"Hits count '{hitsCount}' of '{testJokes.Count}'");
+            LogLine();
 
             LogLine("-----");
             LogLine();

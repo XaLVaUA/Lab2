@@ -2,7 +2,7 @@
   "profiles": {
     "Lab2": {
       "commandName": "Project",
-      "commandLineArgs": "test_10.csv test.csv"
+      "commandLineArgs": "test_30.csv test.csv"
     }
   }
 }
