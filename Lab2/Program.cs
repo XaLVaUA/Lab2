@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace Lab2
 {
@@ -11,8 +10,20 @@ namespace Lab2
         private const char CsvDelimiter = ';';
         private const int JokePartsCount = 3;
 
+        private static readonly Logger _logger;
+
+        static Program()
+        {
+            _logger = new Logger($"log_{DateTime.UtcNow:yyyy-MM-dd}.txt");
+        }
+
         private static void Main(string[] args)
         {
+            LogLine();
+            LogLine("-----");
+            LogLine(DateTime.UtcNow.ToString("yyyy-MM-dd-HH:mm"));
+            LogLine();
+
             if (args is null || args.Length != 2)
             {
                 return;
@@ -32,11 +43,15 @@ namespace Lab2
                 return;
             }
 
+            LogLine($"Learn data '{learnDataFilePath}'");
+            LogLine($"Test data '{testDataFilePath}'");
+            LogLine();
+
             var learnJokes = ReadJokesClassed(learnDataFilePath);
 
             if (learnJokes is null)
             {
-                Console.WriteLine("An error has occurred");
+                LogLine("An error has occurred");
 
                 return;
             }
@@ -44,25 +59,89 @@ namespace Lab2
             var totalJokesCount = learnJokes.Sum(x => x.Value.Count);
             var totalWordsCount = learnJokes.Sum(x => x.Value.Sum(x => x.Words.Count));
 
-            Console.WriteLine("Read Jokes to learn");
-            Console.WriteLine($"Total jokes count '{totalJokesCount}'");
-            Console.WriteLine($"Total words count '{totalWordsCount}'");
-            Console.WriteLine();
+            LogLine("Read Jokes to learn");
+            LogLine($"Total jokes count '{totalJokesCount}'");
+            LogLine($"Total words count '{totalWordsCount}'");
+            LogLine();
 
             var words = learnJokes.ToDictionary(x => x.Key, x => x.Value.SelectMany(y => y.Words).ToList());
-            var wordsCount = learnJokes.ToDictionary
-            (
-                x => x.Key,
-                x => x.Value.SelectMany(y => y.Words).GroupBy(y => y).ToDictionary(y => y.Key, y => y.Count())
-            );
+            
+            var wordsCount = 
+                learnJokes
+                    .ToDictionary
+                    (
+                        x => x.Key,
+                        x => 
+                            x.Value
+                                .SelectMany(y => y.Words)
+                                .GroupBy(y => y)
+                                .ToDictionary(y => y.Key, y => y.Count())
+                    );
 
             foreach (var (jokeClass, jokes) in learnJokes)
             {
-                Console.WriteLine($"Class '{jokeClass}'");
-                Console.WriteLine($"Jokes count '{jokes.Count}'");
-                Console.WriteLine($"Words count '{words[jokeClass].Count}'");
-                Console.WriteLine();
+                LogLine($"Class '{jokeClass}'");
+                LogLine($"Jokes count '{jokes.Count}'");
+                LogLine($"Words count '{words[jokeClass].Count}'");
+                LogLine();
             }
+
+            var testJokes = ReadJokes(testDataFilePath);
+
+            if (testJokes is null)
+            {
+                LogLine("An error has occurred");
+
+                return;
+            }
+
+            var uniqueWordsCount = wordsCount.Sum(x => x.Value.Count);
+            var classifyResults = new List<(int JokeClass, double ClassifyResult)>();
+
+            foreach (var testJoke in testJokes)
+            {
+                LogLine($"Joke number '{testJoke.Number}' (actual class '{testJoke.Class}')");
+
+                classifyResults.Clear();
+
+                foreach (var jokeClass in learnJokes.Keys)
+                {
+                    var classifyResult =
+                        Classify
+                        (
+                            testJoke.Words, 
+                            learnJokes[jokeClass].Count, 
+                            totalJokesCount, 
+                            uniqueWordsCount,
+                            words[jokeClass].Count, 
+                            wordsCount[jokeClass]
+                        );
+
+                    classifyResults.Add((jokeClass, classifyResult));
+
+                    LogLine($"Classified to class '{jokeClass}' with classify result '{classifyResult}'");
+                }
+
+                var maxClassifyResult = classifyResults[0].ClassifyResult;
+                var classifyJokeClass = classifyResults[0].JokeClass;
+
+                for (var i = 1; i < classifyResults.Count; ++i)
+                {
+                    // ReSharper disable once InvertIf
+                    if (classifyResults[i].ClassifyResult > maxClassifyResult)
+                    {
+                        maxClassifyResult = classifyResults[i].ClassifyResult;
+                        classifyJokeClass = classifyResults[i].JokeClass;
+                    }
+                }
+
+                LogLine($"Joke is probably belongs to '{classifyJokeClass}' class");
+
+                LogLine();
+            }
+
+            LogLine("-----");
+            LogLine();
         }
 
         private static Dictionary<int, List<Joke>> ReadJokesClassed(string filePath)
@@ -117,6 +196,7 @@ namespace Lab2
             return result;
         }
 
+        // ReSharper disable once ReturnTypeCanBeEnumerable.Local
         private static List<Joke> ReadJokes(string filePath)
         {
             string text;
@@ -146,11 +226,14 @@ namespace Lab2
                     continue;
                 }
 
+                var jokeText = split[i + 1];
+
                 var joke = new Joke
                 {
                     Number = number,
-                    Text = split[i + 1],
-                    Class = jokeClass
+                    Text = jokeText,
+                    Class = jokeClass,
+                    Words = RetrieveWords(jokeText)
                 };
 
                 result.Add(joke);
@@ -181,6 +264,45 @@ namespace Lab2
             }
 
             return result;
+        }
+
+        private static double Classify(IEnumerable<string> words, int classJokesCount, int totalJokesCount, int uniqueWordsCount, int classTotalWordsCount, IReadOnlyDictionary<string, int> wordsCount)
+        {
+            var left = Math.Log((double)classJokesCount / totalJokesCount);
+
+            //var right = words.Sum(word => (GetValueOrCustom(wordsCount, word, 0) + 1d) / (uniqueWordsCount + classTotalWordsCount));
+
+            var right = 0d;
+
+            foreach (var word in words)
+            {
+                var value = (GetValueOrCustom(wordsCount, word, 0) + 1d) / (uniqueWordsCount + classTotalWordsCount);
+
+                right += value;
+            }
+            
+            var result = left + right;
+
+            return result;
+        }
+
+        private static TValue GetValueOrCustom<TKey, TValue>(IReadOnlyDictionary<TKey, TValue> dictionary, TKey key, TValue customValue)
+        {
+            return dictionary.TryGetValue(key, out var value) ? value : customValue;
+        }
+
+        private static void LogLine()
+        {
+            Console.WriteLine();
+
+            _logger.LogLine();
+        }
+
+        private static void LogLine(string text)
+        {
+            Console.WriteLine(text);
+
+            _logger.LogLine(text);
         }
     }
 }
