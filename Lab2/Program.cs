@@ -284,18 +284,7 @@ namespace Lab2
         private static double Classify(IEnumerable<string> words, int classJokesCount, int totalJokesCount, int uniqueWordsCount, int classTotalWordsCount, IReadOnlyDictionary<string, int> wordsCount)
         {
             var left = Math.Log((double)classJokesCount / totalJokesCount);
-
-            //var right = words.Sum(word => (GetValueOrCustom(wordsCount, word, 0) + 1d) / (uniqueWordsCount + classTotalWordsCount));
-
-            var right = 0d;
-
-            foreach (var word in words)
-            {
-                var value = (GetValueOrCustom(wordsCount, word, 0) + 1d) / (uniqueWordsCount + classTotalWordsCount);
-
-                right += value;
-            }
-            
+            var right = words.Sum(word => Math.Log((GetValueOrCustom(wordsCount, word, 0) + 1d) / (uniqueWordsCount + classTotalWordsCount)));
             var result = left + right;
 
             return result;
