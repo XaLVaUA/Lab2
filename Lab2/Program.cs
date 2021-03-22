@@ -182,8 +182,6 @@ namespace Lab2
                 return;
             }
 
-            var allWords = allJokes.ToDictionary(x => x.Key, x => x.Value.SelectMany(y => y.Words).ToList());
-
             var allWordsCount =
                 allJokes
                     .ToDictionary
@@ -213,6 +211,7 @@ namespace Lab2
                         .Select(x => x.Key)
                         .ToList();
 
+                LogLine();
                 LogLine($"Class '{jokeClass}'");
                 LogLine();
 
@@ -224,6 +223,7 @@ namespace Lab2
                 }
 
                 LogLine();
+                LogLine();
 
                 LogLine("Top 10 without stop words (length <= 3)");
 
@@ -232,6 +232,7 @@ namespace Lab2
                     Log($"{word} ");
                 }
 
+                LogLine();
                 LogLine();
             }
 
