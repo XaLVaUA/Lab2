@@ -8,13 +8,12 @@ namespace Lab2
     internal class Program
     {
         private const char CsvDelimiter = ';';
-        private const int JokePartsCount = 3;
 
-        private static readonly Logger _logger;
+        private static readonly Logger Logger;
 
         static Program()
         {
-            _logger = new Logger($"log_{DateTime.UtcNow:yyyy-MM-dd}.txt");
+            Logger = new Logger($"log_{DateTime.UtcNow:yyyy-MM-dd}.txt");
         }
 
         private static void Main(string[] args)
@@ -24,7 +23,7 @@ namespace Lab2
             LogLine(DateTime.UtcNow.ToString("yyyy-MM-dd-HH:mm"));
             LogLine();
 
-            if (args is null || args.Length != 2)
+            if (args is null || args.Length < 2)
             {
                 return;
             }
@@ -154,6 +153,87 @@ namespace Lab2
 
             LogLine($"Hits count '{hitsCount}' of '{testJokes.Count}'");
             LogLine();
+
+            if (args.Length != 3)
+            {
+                LogLine("-----");
+                LogLine();
+
+                return;
+            }
+
+            var fullDataFilePath = args[2];
+
+            if (!File.Exists(fullDataFilePath))
+            {
+                LogLine("-----");
+                LogLine();
+
+                return;
+            }
+
+            var allJokes = ReadJokesClassed(fullDataFilePath);
+
+            if (allJokes is null)
+            {
+                LogLine("-----");
+                LogLine();
+
+                return;
+            }
+
+            var allWords = allJokes.ToDictionary(x => x.Key, x => x.Value.SelectMany(y => y.Words).ToList());
+
+            var allWordsCount =
+                allJokes
+                    .ToDictionary
+                    (
+                        x => x.Key,
+                        x =>
+                            x.Value
+                                .SelectMany(y => y.Words)
+                                .GroupBy(y => y)
+                                .ToDictionary(y => y.Key, y => y.Count())
+                    );
+
+            foreach (var (jokeClass, classWordsCount) in allWordsCount)
+            {
+                var top10 =
+                    classWordsCount
+                        .OrderByDescending(x => x.Value)
+                        .Take(10)
+                        .Select(x => x.Key)
+                        .ToList();
+
+                var top10WithoutStopWords =
+                    classWordsCount
+                        .Where(x => x.Key.Length > 3)
+                        .OrderByDescending(x => x.Value)
+                        .Take(10)
+                        .Select(x => x.Key)
+                        .ToList();
+
+                LogLine($"Class '{jokeClass}'");
+                LogLine();
+
+                LogLine("Top 10");
+
+                foreach (var word in top10)
+                {
+                    Log($"{word} ");
+                }
+
+                LogLine();
+
+                LogLine("Top 10 without stop words (length <= 3)");
+
+                foreach (var word in top10WithoutStopWords)
+                {
+                    Log($"{word} ");
+                }
+
+                LogLine();
+            }
 
             LogLine("-----");
             LogLine();
@@ -299,14 +379,21 @@ namespace Lab2
         {
             Console.WriteLine();
 
-            _logger.LogLine();
+            Logger.LogLine();
         }
 
         private static void LogLine(string text)
         {
             Console.WriteLine(text);
 
-            _logger.LogLine(text);
+            Logger.LogLine(text);
+        }
+
+        private static void Log(string text)
+        {
+            Console.Write(text);
+
+            Logger.Log(text);
         }
     }
 }

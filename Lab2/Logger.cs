@@ -23,6 +23,11 @@ namespace Lab2
             _writer.WriteLine();
         }
 
+        public void Log(string text)
+        {
+            _writer.Write(text);
+        }
+
         public void Dispose()
         {
             // ReSharper disable once InvertIf
